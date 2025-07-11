@@ -12,7 +12,7 @@ const games = [
 ];
 
 // Optional: add test games dynamically
-for (let i = 6; i <= 20; i++) {
+for (let i = 7; i <= 20; i++) {
   games.push({
     title: `Test Game ${i}`,
     url: "#",
