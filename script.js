@@ -10,10 +10,11 @@ const games = [
   { title: "World Guessr", url: "https://www.worldguessr.com/", img: "game5.png" },
   { title: "Conrads Clicker", url: "https://l1000-dev.github.io/Conrad-s-Clicker/", img: "game6.png" },
   { title: "Slope 3D", url: "https://slopeonline.online/slope-game", img: "game7.png" },
+  { title: "Brainrot Clicker", url: "https://slopeonline.online/italian-brainrot-clicker-2", img: "game8.png" },
 ];
 
 // Optional: add test games dynamically
-for (let i = 8; i <= 20; i++) {
+for (let i = 9; i <= 20; i++) {
   games.push({
     title: `Test Game ${i}`,
     url: "#",
