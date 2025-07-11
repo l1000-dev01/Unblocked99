@@ -13,15 +13,6 @@ const games = [
   { title: "Brainrot Clicker", url: "https://slopeonline.online/italian-brainrot-clicker-2", img: "game8.png" },
 ];
 
-// Optional: add test games dynamically
-for (let i = 9; i <= 20; i++) {
-  games.push({
-    title: `Test Game ${i}`,
-    url: "#",
-    img: `https://via.placeholder.com/220x140?text=Game+${i}`
-  });
-}
-
 const gamesSection = document.querySelector(".games");
 
 games.forEach(game => {
