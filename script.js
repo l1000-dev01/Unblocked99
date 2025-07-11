@@ -8,6 +8,7 @@ const games = [
   { title: "Worlds Hardest Game", url: "https://unblocked-games.s3.amazonaws.com/worlds-hardest-game.html", img: "game3.png" },
   { title: "Geometry Dash", url: "https://sites.google.com/view/unblocked-games-76-new/geometry-dash", img: "game4.png" },
   { title: "World Guessr", url: "https://www.worldguessr.com/", img: "game5.png" },
+  { title: "Conrads Clicker", url: "https://l1000-dev.github.io/Conrad-s-Clicker/", img: "game6.png" },
 ];
 
 // Optional: add test games dynamically
