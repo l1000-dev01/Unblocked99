@@ -20,9 +20,9 @@ games.forEach(game => {
   card.className = "game-card";
   card.onclick = () => launchGame(game.url);
 
-  card.innerHTML = 
+  card.innerHTML = `
     <img src="${game.img}" alt="${game.title}" loading="lazy" />
     <h3>${game.title}</h3>
-  ;
+  `;
   gamesSection.appendChild(card);
 });
