@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://l1000-dev01.github.io/Unblocked99/sitemap.xml
