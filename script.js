@@ -18,7 +18,7 @@ const games = [
   { title: "Drift Hunters", url: "https://www.180sx.club/drift-hunters/", img: "game2.png", categories: ["Driving", "3D"] },
   { title: "Worlds Hardest Game", url: "https://unblocked-games.s3.amazonaws.com/worlds-hardest-game.html", img: "game3.png", categories: ["Puzzle", "2D"] },
   { title: "Geometry Dash", url: "https://sites.google.com/view/unblocked-games-76-new/geometry-dash", img: "game4.png", categories: ["2D", "Puzzle"] },
-  { title: "World Guessr", url: "https://www.worldguessr.com/", img: "game5.png", categories: ["Puzzle"] },
+  { title: "World Guessr", url: "https://www.worldguessr.com/", img: "game5.png", categories: ["Puzzle", "2D", "3D"] },
   { title: "Conrads Clicker", url: "https://l1000-dev.github.io/Conrad-s-Clicker/", img: "game6.png", categories: ["Clicker", "2D"] },
   { title: "Slope 3D", url: "https://slopeonline.online/slope-game", img: "game7.png", categories: ["Driving", "3D"] },
   { title: "Brainrot Clicker", url: "https://slopeonline.online/italian-brainrot-clicker-2", img: "game8.png", categories: ["Clicker", "2D"] },
