@@ -40,7 +40,11 @@ function renderGames(filteredGames) {
   filteredGames.forEach(game => {
     const card = document.createElement("div");
     card.className = "game-card";
-    card.onclick = () => window.open(game.url, "_blank");
+    card.onclick = () => {
+      const encodedURL = encodeURIComponent(game.url);
+      const encodedTitle = encodeURIComponent(game.title);
+      window.location.href = `game.html?url=${encodedURL}&title=${encodedTitle}`;
+    };
 
     card.innerHTML = `
       <img src="${game.img}" alt="${game.title}" loading="lazy" />
