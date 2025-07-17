@@ -7,17 +7,30 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Playing: <span id="game-title"></span></h1>
-  </header>
   <main>
-    <iframe id="game-frame" src="" frameborder="0" allowfullscreen></iframe>
-    <div style="margin-top: 20px;">
-      <button onclick="toggleFullscreen()">Fullscreen</button>
-      <button onclick="goHome()">Back to Home</button>
+    <div class="game-container">
+      <h1>Playing: <span id="game-title"></span></h1>
+      <iframe
+        id="game-frame"
+        src=""
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      <div class="button-group">
+        <button
+          class="btn btn-primary"
+          onclick="toggleFullscreen()"
+        >Fullscreen</button>
+        <button
+          class="btn btn-secondary"
+          onclick="goHome()"
+        >Back to Home</button>
+      </div>
     </div>
   </main>
+
   <script>
+    // pull title & URL from query string
     const params = new URLSearchParams(window.location.search);
     const title = params.get("title");
     const url = params.get("url");
@@ -25,20 +38,22 @@
     document.getElementById("game-title").textContent = title;
     document.getElementById("game-frame").src = url;
 
+    // fullscreen toggle
     function toggleFullscreen() {
       const iframe = document.getElementById("game-frame");
       if (iframe.requestFullscreen) {
-      iframe.requestFullscreen();
-      } else if (iframe.webkitRequestFullscreen) { // Safari
-     iframe.webkitRequestFullscreen();
-     } else if (iframe.msRequestFullscreen) { // IE11
-     iframe.msRequestFullscreen();
-     }
-     }
+        iframe.requestFullscreen();
+      } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen(); // Safari
+      } else if (iframe.msRequestFullscreen) {
+        iframe.msRequestFullscreen(); // IE11
+      }
+    }
 
-     function goHome() {
-       window.location.href = "index.html";
-     }
+    // back to index
+    function goHome() {
+      window.location.href = "index.html";
+    }
   </script>
 </body>
 </html>
