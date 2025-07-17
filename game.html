@@ -12,6 +12,10 @@
   </header>
   <main>
     <iframe id="game-frame" src="" frameborder="0" allowfullscreen></iframe>
+    <div style="margin-top: 20px;">
+      <button onclick="toggleFullscreen()">Fullscreen</button>
+      <button onclick="goHome()">Back to Home</button>
+    </div>
   </main>
   <script>
     const params = new URLSearchParams(window.location.search);
@@ -20,6 +24,21 @@
 
     document.getElementById("game-title").textContent = title;
     document.getElementById("game-frame").src = url;
+
+    function toggleFullscreen() {
+      const iframe = document.getElementById("game-frame");
+      if (iframe.requestFullscreen) {
+      iframe.requestFullscreen();
+      } else if (iframe.webkitRequestFullscreen) { // Safari
+     iframe.webkitRequestFullscreen();
+     } else if (iframe.msRequestFullscreen) { // IE11
+     iframe.msRequestFullscreen();
+     }
+     }
+
+     function goHome() {
+       window.location.href = "index.html";
+     }
   </script>
 </body>
 </html>
