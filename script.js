@@ -40,7 +40,7 @@ function renderGames(filteredGames) {
   filteredGames.forEach(game => {
     const card = document.createElement("div");
     card.className = "game-card";
-    card.onclick = () => embedGame(game);
+    card.onclick = () => window.open(game.url, "_blank");
 
     card.innerHTML = `
       <img src="${game.img}" alt="${game.title}" loading="lazy" />
