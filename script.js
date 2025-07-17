@@ -22,6 +22,7 @@ const games = [
   { title: "Conrads Clicker", url: "https://l1000-dev.github.io/Conrad-s-Clicker/", img: "game6.png", categories: ["Clicker", "2D"] },
   { title: "Slope 3D", url: "https://slopeonline.online/slope-game", img: "game7.png", categories: ["Driving", "3D"] },
   { title: "Brainrot Clicker", url: "https://slopeonline.online/italian-brainrot-clicker-2", img: "game8.png", categories: ["Clicker", "2D"] },
+  { title: "Wordle Unlimited", url: "https://wordly.org/", img: "game9.png", categories: ["Puzzle", "2D"] },
 ];
 
 const gamesSection = document.querySelector(".games");
