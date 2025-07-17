@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Play Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Playing: <span id="game-title"></span></h1>
+  </header>
+  <main>
+    <iframe id="game-frame" src="" frameborder="0" allowfullscreen></iframe>
+  </main>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const title = params.get("title");
+    const url = params.get("url");
+
+    document.getElementById("game-title").textContent = title;
+    document.getElementById("game-frame").src = url;
+  </script>
+</body>
+</html>
