@@ -1,5 +1,12 @@
-function launchGame(url) {
-  window.open(url, '_blank');
+function embedGame(game) {
+  const playerSection = document.getElementById("game-player");
+  const gameFrame = document.getElementById("game-frame");
+  const gameTitle = document.getElementById("game-title");
+
+  gameFrame.src = game.url;
+  gameTitle.textContent = game.title;
+  playerSection.style.display = "block";
+  window.scrollTo({ top: playerSection.offsetTop, behavior: "smooth" });
 }
 
 const categories = [
@@ -33,7 +40,7 @@ function renderGames(filteredGames) {
   filteredGames.forEach(game => {
     const card = document.createElement("div");
     card.className = "game-card";
-    card.onclick = () => launchGame(game.url);
+    card.onclick = () => embedGame(game);
 
     card.innerHTML = `
       <img src="${game.img}" alt="${game.title}" loading="lazy" />
