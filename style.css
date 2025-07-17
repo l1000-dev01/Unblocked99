@@ -165,3 +165,36 @@ iframe#game-frame {
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
+
+/* Button base */
+.btn {
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  box-shadow: 0 4px 8px var(--card-shadow);
+  margin: 0 0.5rem;
+}
+
+/* Primary (Fullscreen) */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #e53530; /* slightly darker */
+  transform: translateY(-1px);
+}
+
+/* Secondary (Back to Home) */
+.btn-secondary {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+.btn-secondary:hover {
+  background-color: #e0b22a;
+  transform: translateY(-1px);
+}
