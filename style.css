@@ -166,7 +166,7 @@ iframe#game-frame {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Button base */
+/* ————— Button Base ————— */
 .btn {
   padding: 0.6rem 1.4rem;
   font-size: 1rem;
@@ -179,17 +179,17 @@ iframe#game-frame {
   margin: 0 0.5rem;
 }
 
-/* Primary (Fullscreen) */
+/* Fullscreen (blue) */
 .btn-primary {
-  background-color: var(--primary-color);
-  color: white;
+  background-color: var(--secondary-color);
+  color: #fff;
 }
 .btn-primary:hover {
-  background-color: #e53530; /* slightly darker */
+  background-color: #1f1f42;
   transform: translateY(-1px);
 }
 
-/* Secondary (Back to Home) */
+/* Back to Home (yellow) */
 .btn-secondary {
   background-color: var(--accent-color);
   color: var(--secondary-color);
@@ -197,4 +197,26 @@ iframe#game-frame {
 .btn-secondary:hover {
   background-color: #e0b22a;
   transform: translateY(-1px);
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.game-container iframe {
+  width: 80%;
+  max-width: 960px;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px var(--card-shadow);
+  margin-bottom: 1.5rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
