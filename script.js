@@ -1,3 +1,4 @@
+// Script
 function embedGame(game) {
   const playerSection = document.getElementById("game-player");
   const gameFrame = document.getElementById("game-frame");
