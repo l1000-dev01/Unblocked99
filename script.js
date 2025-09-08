@@ -61,6 +61,7 @@ function renderCategories() {
     li.textContent = cat;
     li.onclick = () => {
       if (cat === "All") {
+        
         renderGames(games);
       } else {
         const filtered = games.filter(game => game.categories.includes(cat));
